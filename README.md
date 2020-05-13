@@ -1,4 +1,2 @@
-# Anthony Agbay
-
-## Projects
+# Projects
 [Python Resource Guide](https://anthony-agbay.github.io/python-resource-guide)
