@@ -48,7 +48,6 @@ Selecting an object or a subset of an object is extremely important for manipula
 |       resi        |          i          |           Residue Number (Integer Index)<br>`select resi 200`            |
 |       chain       |          c          |                      PDB Chain<br>`select chain a`                       |
 |        ss         |         ss          | Secondary Structure<br>(h = helix, s = sheet, l = loop)<br>`select ss h` |
-[Selection Expression Guide]
 
 ### Selection Algebra
 
@@ -58,7 +57,6 @@ Selecting an object or a subset of an object is extremely important for manipula
 | s1 and s2 | s1 & s2  |        Selects atoms in both s1 and s2        |
 | s1 or s2  | s1 \| s2 |       Selects atoms in either s1 and s2       |
 | s1 in s2  | s1 in s2 | Selects atoms in s1 whos identifiers match s2 |
-[Selection Algebra]
 
 ### Proximity Selection Expressions
 
@@ -67,7 +65,6 @@ Selecting an object or a subset of an object is extremely important for manipula
 | s1 within {dist} of s2 |    w     |      Selects atoms in s1 that are within {dist} angstroms of s2      |
 |    s1 around {dist}    |    a     |  Selects atoms with centers within {dist} angstroms of atoms in s1   |
 |    s1 expand {dist{    |    x     | Epxands s1 by including atoms within {dist} angstroms of atoms in s1 |
-[Proximity Selection]
 
 ## Manipulating Representations
 
