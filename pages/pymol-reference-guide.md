@@ -40,6 +40,7 @@ select {selection-name}, {selection-expression}
 Selecting an object or a subset of an object is extremely important for manipulating and visualizing in PyMOL
 
 ### Selection Expression Guide
+
 | Property Selector | Short Form Selector | Identifier and Example                                                   |
 | :---------------: | :-----------------: | :----------------------------------------------------------------------: |
 |       name        |          n          |                   Atom Name<br>`select name c+o+n+ca`                    |
@@ -50,6 +51,7 @@ Selecting an object or a subset of an object is extremely important for manipula
 [Selection Expression Guide]
 
 ### Selection Algebra
+
 | Operator  | Shortcut | Effect                                        |
 | :-------: | :------: | :-------------------------------------------: |
 |  not s1   |   ! s1   |            Selects atoms not in s1            |
@@ -59,6 +61,7 @@ Selecting an object or a subset of an object is extremely important for manipula
 [Selection Algebra]
 
 ### Proximity Selection Expressions
+
 | Operator               | Shortcut | Effect                                                               |
 | :--------------------: | :------: | :------------------------------------------------------------------: |
 | s1 within {dist} of s2 |    w     |      Selects atoms in s1 that are within {dist} angstroms of s2      |
