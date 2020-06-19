@@ -1,6 +1,3 @@
-# About
-My name is Anthony Agbay. I am a bioengineer interested on exploring the interface between computer science and protein engineering. I recieved by bachelors (2019) and masters (2020) in Bioengineering from Stanford University.
-
 # Projects
 
 - [Python Resource Guide](https://anthony-agbay.github.io/python-resource-guide)  
