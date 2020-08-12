@@ -1,0 +1,32 @@
+name: tex
+parent: default
+
+matches:
+
+  ### Block Math "/" commands      
+  - trigger: "/math"
+    replace: "$$$|$$$"
+
+  ### Inline Math "/" command"
+  - trigger: "/imath"
+    replace: "$$|$$"
+
+  ### Fraction "\" command
+  - trigger: "\\frac"
+    replace: "\\frac{$|$}{}"
+
+  ## Magnitude of Quantity
+  - trigger: "\\norm"
+    replace: "\\Vert $|$ \\Vert"
+
+  ## Matrix Inverse
+  - trigger: "\\inv"
+    replace: "^{-1}"
+
+  ## Matrix Transpose
+  - trigger: "\\trans"
+    replace: "^\\intercal"
+
+  ## Augmented Matrix
+  - trigger: ";augmatrix"
+    replace: "test"

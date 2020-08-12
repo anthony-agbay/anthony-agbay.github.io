@@ -1,0 +1,24 @@
+name: walk-in-the-forest-shortcuts
+parent: default
+
+matches:
+  - trigger: ":binderlink"
+    replace: "[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anthony-agbay/walk-in-the-forest-environment/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fanthony-agbay%252Fwalk-in-the-forest-code%26urlpath%3Dtree%252Fwalk-in-the-forest-code%252Fnotebooks%252F$0$.ipynb%26branch%3Dmaster)"
+    passive_only: true
+
+  - trigger: ";colablink"
+    replace: "[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anthony-agbay/walk-in-the-forest-code/blob/master/notebooks/$|$.ipynb)"
+
+  - trigger: ":img"
+    replace: '{{< figure src="$0$" title="$1$" numbered="true" >}}'
+    passive_only: true
+  
+  - trigger: ";toc"
+    replace: "{{% toc %}}"
+
+  - trigger: ":refpost"
+    replace: '[$0$]({{< ref "/post/$1$/index.md" >}})'
+    passive_only: true
+
+  - trigger: ";mimg"
+    replace: "![]($|$)"

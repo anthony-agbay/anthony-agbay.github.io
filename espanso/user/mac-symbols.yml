@@ -1,0 +1,97 @@
+name: mac-symbols
+parent: default
+
+matches:
+  # Command Symbol
+  - trigger: ";cmd"
+    replace: "⌘"
+
+  # Shift Symbol
+  - trigger: ";shift"
+    replace: "⇧"
+
+  # Control Symbol
+  - trigger: ";ctrl"
+    replace: "⌃"
+
+  # Option/Alt symbol
+  - trigger: ";opt"
+    replace: "⌥"
+
+  # Caps Lock
+  - trigger: ";caps-lock"
+    replace: "⇪"
+
+  # Esc Symbol
+  - trigger: ";esc"
+    replace: "⎋"
+
+  # Ejection Symbol
+  - trigger: ";eject"
+    replace: "⏏"
+
+  # Return Symbol
+  - trigger: ";return"
+    replace: "↵"
+
+  # Enter Symbol
+  - trigger: ";enter"
+    replace: "⌅"
+
+  # Tab
+  - trigger: ";tab"
+    replace: "⇥"
+
+  # Back Tab
+  - trigger: ";btab"
+    replace: "⇤"
+
+  # Page Up
+  - trigger: ";pgup"
+    replace: "⇞"
+
+  # Page Down
+  - trigger: ";pgdown"
+    replace: "⇟"
+
+  # Home
+  - trigger: ";home"
+    replace: "↖"
+
+  # End
+  - trigger: ";end"
+    replace: "↘"
+
+  # Space
+  - trigger: ";space"
+    replace: "␣"
+
+  # Del
+  - trigger: ";delete"
+    replace: "⌫"
+
+  # Forward Delete
+  - trigger: ";fdel"
+    replace: "⌦"
+
+  # Left Arrow
+  - trigger: ";larrow"
+    replace: "←"
+
+  # Right Arrow
+  - trigger: ";rarrow"
+    replace: "→"
+
+  # Left-Right Arrow
+  - trigger: ";lrarrow"
+    replace: "⟷"
+
+  # Up Arrow
+  - trigger: ";uarrow"
+    replace: "↑"
+
+  # Down Arrow
+  - trigger: ";darrow"
+    replace: "↓"
+
+

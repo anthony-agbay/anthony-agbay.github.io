@@ -1,0 +1,10 @@
+name: spell-check
+parent: default
+
+matches:
+  # Teh -> The
+  - trigger: "Teh "
+    replace: "The "
+  
+  - trigger: "teh "
+    replace: "the "

@@ -1,0 +1,11 @@
+name: html
+parent: default
+
+matches:
+  ## Superscript
+  - trigger: ";sup"
+    replace: "<sup>$|$</sup>"
+
+  ## Subscript
+  - trigger: ";sub"
+    replace: "<sub>$|$</sub>"

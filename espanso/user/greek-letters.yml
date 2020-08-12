@@ -1,0 +1,199 @@
+name: greek-letters
+parent: default
+
+matches:
+  # Alpha
+  - trigger: ";Alpha"
+    replace: "𝛢"
+
+  - trigger: ";alpha"
+    replace: "α"
+
+  - trigger: ";malpha"
+    replace: "𝛼"
+
+  # Beta
+  - trigger: ";Beta"
+    replace: "𝛣"
+
+  - trigger: ";beta"
+    replace: "β"
+
+  - trigger: ";mbeta"
+    replace: "𝛽"
+
+
+  # Delta
+  - trigger: ";Delta"
+    replace: "𝛥"
+
+  - trigger: ";delta"
+    replace: "𝛿"
+
+  # Epsilon
+  - trigger: ";Epsilon"
+    replace: "𝛦"
+
+  - trigger: ";eps"
+    replace: "𝜀"
+
+  - trigger: ";meps"
+    replace: "𝜖"
+
+  # Phi
+  - trigger: ";Phi"
+    replace: "Φ"
+
+  - trigger: ";phi"
+    replace: "φ"
+
+  - trigger: ";mPhi"
+    replace: "𝛷"
+
+  - trigger: ";mphi"
+    replace: "𝝋"
+
+  # Gamma
+  - trigger: ";Gamma"
+    replace: "𝛤"
+
+  - trigger: ";gamma"
+    replace: "𝛾"
+
+  # Eta
+  - trigger: ";Eta"
+    replace: "𝛨"
+
+  - trigger: ";eta"
+    replace: "𝜂"
+  
+  # Iota
+  - trigger: ";Iota"
+    replace: "𝛪"
+
+  - trigger: ";iota"
+    replace: "𝜄"
+
+  # Theta
+  - trigger: ";Theta"
+    replace: "𝛩"
+  
+  - trigger: ";theta"
+    replace: "𝜃"
+
+  # Kappa
+  - trigger: ";Kappa"
+    replace: "𝛫"
+
+  - trigger: ";kappa"
+    replace: "𝜅"
+
+  # Lambda
+  - trigger: ";Lambda"
+    replace: "𝛬"
+
+  - trigger: ";lambda"
+    replace: "𝜆" 
+
+  # Mu
+  - trigger: ";Mu"
+    replace: "𝛭"
+
+  - trigger: ";mu"
+    replace: "𝜇"
+
+  # Nu
+  - trigger: ";Nu"
+    replace: "𝛮"
+
+  - trigger: ";nu"
+    replace: "𝜈"
+
+  # Omnicron
+  - trigger: ";Omnicron"
+    replace: "𝛰"
+
+  - trigger: ";omnicron"
+    replace: "𝜊"
+
+  # Pi
+  - trigger: ";pi"
+    replace: "π"
+
+  - trigger: ";mPi"
+    replace: "𝛱"
+
+  - trigger: ";mpi"
+    replace: "𝜋"
+  
+  # Chi
+  - trigger: ";Chi"
+    replace: "𝛸"
+
+  - trigger: ";chi"
+    replace: "𝜒"
+
+  # Rho
+  - trigger: "𝛲"
+    replace: "𝜌"
+
+  # Sigma
+  - trigger: ";sigma"
+    replace: "σ"
+
+  - trigger: ";mSigma"
+    replace: "𝛴"
+  
+  - trigger: ";msigma"
+    replace: "𝜎"
+
+  # Tau
+  - trigger: ";Tau"
+    replace: "𝛵"
+  
+  - trigger: ";tau"
+    replace: "𝜏"
+
+  # Upsilon
+  - trigger: ";Upsilon"
+    replace: "𝛶"
+  
+  - trigger: ";upsilon"
+    replace: "𝜐"
+
+  # Omega
+  - trigger: ";Omega"
+    replace: "𝛺"
+
+  - trigger: ";omega"
+    replace: "𝜔"
+
+  # Xi
+  - trigger: ";Xi"
+    replace: "𝛯"
+
+  - trigger: ";xi"
+    replace: "𝜉"
+
+  # Psi
+  - trigger: ";Psi"
+    replace: "Ψ"
+
+  - trigger: ";psi"
+    replace: "ψ"
+
+  - trigger: ";mPsi"
+    replace: "𝛹"
+
+  - trigger: ";mpsi"
+    replace: "𝜓"
+
+  # Zeta
+  - trigger: ";Zeta"
+    replace: "𝛧"
+
+  - trigger: ";zeta"
+    replace: "𝜁"
+  # Nabla
+  - trigger: ";nabla"
+    replace: "𝛻"

@@ -1,0 +1,130 @@
+name: zettelkasten
+parent: default
+
+matches:
+  ### Main New Zettel
+  - trigger: ":nz"
+    replace: |
+              ---
+              
+              title: $0$
+              tags: #zt-inbox
+              uid: {{dateuid}}
+              
+              ---
+
+              # $0$
+    passive_only: true
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+    ### Main New Book Note
+  - trigger: ":nb"
+    replace: |
+              ---
+              
+              title: $0$
+              tags: #booknotes
+              uid: {{dateuid}}
+              
+              ---
+
+              # $0$
+
+              ## Citation
+
+
+              ## Summary
+
+              ## Unprocessed Notes
+
+              ## Processed Notes
+
+    passive_only: true
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+  # New Web Note
+  - trigger: ":nw"
+    replace: |
+              ---
+              
+              title: $0$
+              tags: #webnotes
+              uid: {{dateuid}}
+              
+              ---
+
+              # $0$
+
+              ## Source
+
+
+              ## Summary
+
+              ## Unprocessed Notes
+
+              ## Processed Notes
+              
+    passive_only: true
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+  # New Journal Article Note
+  - trigger: ":nj"
+    replace: |
+              ---
+              
+              title: $0$
+              tags: #journalnotes
+              uid: {{dateuid}}
+              
+              ---
+
+              # $0$
+
+              ## Citation
+
+
+              ## Summary
+
+              ## Unprocessed Notes
+
+              ## Processed Notes
+              
+    passive_only: true
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+  ### Just the uid
+  - trigger: ";ztid"
+    replace: "{{dateuid}}"
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+
+  ### Footnotes
+  - trigger: ";fn"
+    replace: "[^$|$]"
+
+  ### Markdown Link to Local File (Given file URL is in clipboard)
+  - trigger: ";lf"
+    replace: "[(Local File)]({{clipboard}})"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
