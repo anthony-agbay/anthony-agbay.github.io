@@ -117,6 +117,35 @@ matches:
         params:
           format: "%Y%m%d%H%M"
 
+  # new Author 
+  - trigger: ":na"
+    replace: |
+              ---
+              
+              title: $0$
+              tags: #authors
+              uid: {{dateuid}}
+              
+              ---
+
+              # $0$
+              
+    passive_only: true
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
+  ### Just the uid
+  - trigger: ";ztid"
+    replace: "{{dateuid}}"
+    vars:
+      - name: dateuid
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
 
   ### Footnotes
   - trigger: ";fn"

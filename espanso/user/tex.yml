@@ -28,5 +28,19 @@ matches:
     replace: "^\\intercal"
 
   ## Augmented Matrix
-  - trigger: ";augmatrix"
-    replace: "test"
+  - trigger: "\\augmatrix"
+    replace: |
+              \left[
+              \begin{array}{cc|c}
+                a&b&c_1 \\
+                d&e&c_2
+              \end{array}
+              \right]
+
+  ## Vmatrix (Determinants)
+  - trigger: "\\vmatrix"
+    replace: "\\begin{vmatrix} $|$ \\end{vmatrix}"
+
+  ## Equation Referencing
+  - trigger: ";eqref"
+    replace : "**($|$)**"

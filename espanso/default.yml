@@ -9,7 +9,7 @@
 
 # Global Settings
 enable_passive: true
-passive_key: CTRL
+passive_key: META
 secure_input_notification: false
 
 

@@ -1,0 +1,12 @@
+name: daily-notes
+parent: default
+
+matches:
+  # Breadcrumb
+  - trigger: ";bc"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo `date -v -1d \"+[[%Y-%m-%d|<< Yesterday]]\"`' | '`date -v +1d \"+[[%Y-%m-%d|Tommorrow >>]]\"`"
